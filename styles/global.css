@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backgroundColor: #2F2F2F;
+    --defaultGreen: #206C47;
+    --hoverGreen: #5FC393;
+    --newLogoName: #4A9772;
+    --worldLogoName: #D0A765;
+}
