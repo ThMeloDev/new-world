@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="menuIcon" src="../assets/menu.png" alt="Icone do Menu" onclick="openMenu()">
+            <div id="logo">
+                <span id="newLogoName" class="logoName">New</span>
+                <img id="logoIcon" src="../assets/logoIcon.png" alt="Icone da logo">
+                <span id="worldLogoName" class="logoName">World</span>
+            </div>
+        </div>
+        <!-- Menu lateral -->
+        <nav id="menu">
+            <div id="closeDiv">
+                <img id="closeNav" src="../assets/close.png" alt="Icone do X" onclick="closeMenu()">
+            </div>
+            <ul>
+                <li>
+                    <img src="../assets/home.png" alt="Logo da pagina home">
+                    <span>Home</span>
+                </li>
+                <li>
+                    <img src="../assets/login.png" alt="Logo de login">
+                    <span>Faça Login</span>
+                </li>
+                <li>
+                    <img src="../assets/info.png" alt="Logo de sobre nós">
+                    <span>Sobre nós</span>
+                </li>
+                <li>
+                    <img src="../assets/interrogacao.png" alt="Logo para ajuda">
+                    <span>Ajuda</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastrar</h1>
+        <form action="">
+            <div>
+                <label for="">E-mail</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Senha</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Repetir Senha</label>
+                <input type="text">
+            </div>
+            
+            <div>
+                <input type="checkbox" name="userType" value='associacao' id="userType">
+                <label for="userType">Associação</label>
+            </div>
+            <div>
+                <input type="checkbox" name="userType" id="pessoaFisica">
+                <label for="pessoaFisica">Pessoa Física</label>
+            </div>
+
+            <div id="afterCheckbox_associacao">
+                <div>
+                    <label for="">CNPJ*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">NOME*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">CEP*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">LOGRADOURO*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">NÚMERO*</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">BAIRRO*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">UF*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">TELEFONE 1*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">TELEFONE 2</label>
+                    <input type="text">
+                </div>
+
+                <button>Cadastrar</button>
+            </div>
+
+            <div id="afterCheckbox_pessoaFisica">
+                <div>
+                    <label for="">CPF*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">NOME*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">DATA DE NASCIMENTO*</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="">GÊNERO*</label>
+                    <select name="" id="">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">CEP*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">LOGRADOURO*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">NÚMERO*</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">BAIRRO*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">UF*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">TELEFONE 1*</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">TELEFONE 2</label>
+                    <input type="text">
+                </div>
+
+                <button>Cadastrar</button>
+            </div>
+        </form>
+    </main>
+  
+
+</body>
+
+</html>
