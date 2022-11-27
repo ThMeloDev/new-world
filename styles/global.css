@@ -31,6 +31,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 0;
 }
 
 /*buttons*/
@@ -93,7 +94,7 @@ header div {
 }
 
 #backgroundOverlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -101,10 +102,11 @@ header div {
     min-height: 100%;
     background: rgba(0, 0, 0, 0.4);
     display: none;
+    z-index: 1;
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     background-color: var(--backgroundColor);
     top: 0;
     left: -50vw;
@@ -114,6 +116,7 @@ nav {
     width: 50vw;
     min-height: 100vh;
     transition: all .4s;
+    z-index: 2;
 }
 
 nav a{
