@@ -77,21 +77,8 @@ header div {
     gap: 16px;
 }
 
-#newLogoName {
-    color: var(--newLogoName);
-}
-
-#logoIcon {
-    margin-top: 24px;
-}
-
-#worldLogoName {
-    color: var(--worldLogoName);
-}
-
-.logoName {
-    font-family: 'Irish Grover', cursive;
-    font-size: 48px;
+#logo{
+    width: 20rem;
 }
 
 #backgroundOverlay {
