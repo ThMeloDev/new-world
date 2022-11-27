@@ -67,6 +67,7 @@ header div {
 }
 
 #menuIcon {
+    cursor:pointer;
     height: 40px;
 }
 
@@ -116,6 +117,7 @@ nav a{
     padding: 24px 40px;
     margin-left: auto;
     margin-bottom: 32px;
+    cursor:pointer;
 }
 
 nav li {
@@ -127,6 +129,7 @@ nav li {
     width: 100%;
     padding: 32px 32px;
     box-shadow: 16px;
+    cursor:pointer;
 }
 
 nav li:hover {
