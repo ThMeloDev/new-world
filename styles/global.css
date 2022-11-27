@@ -10,4 +10,144 @@
     --hoverGreen: #5FC393;
     --newLogoName: #4A9772;
     --worldLogoName: #D0A765;
+    --inputBackground: rgba(0, 0, 0, 0.25);
+    --hiperlink: #3d9c6e;
+}
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Irish+Grover&family=Readex+Pro&display=swap');
+
+
+body {
+    background-color: var(--backgroundColor);
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*buttons*/
+
+.button{
+    width: 15rem;
+    padding: 0.7rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--defaultGreen);
+}
+
+.button:hover{
+    background-color: var(--hoverGreen);
+}
+
+/* Menu Css */
+
+header {
+    padding: 64px;
+    max-width: 100vw;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuIcon {
+    height: 40px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#newLogoName {
+    color: var(--newLogoName);
+}
+
+#logoIcon {
+    margin-top: 24px;
+}
+
+#worldLogoName {
+    color: var(--worldLogoName);
+}
+
+.logoName {
+    font-family: 'Irish Grover', cursive;
+    font-size: 48px;
+}
+
+#backgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+nav {
+    position: absolute;
+    background-color: var(--backgroundColor);
+    top: 0;
+    left: -50vw;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-height: 100vh;
+    transition: all .4s;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#closeNav {
+    height: 83.2px;
+    padding: 24px 40px;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+nav li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: min-content;
+    gap: 16px;
+    width: 100%;
+    padding: 32px 32px;
+    box-shadow: 16px;
+}
+
+nav li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+nav ul img {
+    height: 36.8px;
+}
+
+nav span {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: white;
 }

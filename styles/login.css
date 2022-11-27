@@ -1,0 +1,95 @@
+main{
+    margin-top: 10rem;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem 0;
+}
+
+.inputDiv label {
+    color: var(--defaultGreen);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.8rem;
+}
+
+.containerInput {
+    position: relative;
+}
+
+#emailIcon{
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    height: 1.5rem;
+}
+
+#lokerIcon{
+    position: absolute;
+    left: 1.2rem;
+    top: 0.9rem;
+    width: 1.5rem; 
+}
+
+.inputDiv input {
+    outline: none;
+    border: solid 0.15rem var(--defaultGreen);
+    border-radius: 0.8rem;
+
+    padding: 0.7rem;
+    padding-left: 3.3rem;
+    font-size: 2rem;
+    color: white;
+
+    background-color: var(--inputBackground);
+    border-color: var(--defaultGreen);
+}
+
+.inputDiv input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: var(--hoverGreen);
+}
+
+#forgotPassword{
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: var(--hiperlink);
+}
+
+#forgotPassword:hover{
+    color: var(--hoverGreen);
+}
+
+#registerSpan{
+    font-size: 1.5rem;
+    color: var(--defaultGreen);
+}
+
+#registerSpan a{
+    color: var(--hiperlink);
+    text-decoration: none;
+}
+
+#registerSpan a:hover{
+    color: var(--hoverGreen);
+}
+
