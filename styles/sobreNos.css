@@ -20,7 +20,7 @@
     max-width: 50vw;
 }
 
-ul{
+main ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@ ul{
     gap: 2rem;
 }
 
-li{
+main li{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ li{
     gap: 1rem;
 }
 
-li span{
+main li span{
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     color: white;
