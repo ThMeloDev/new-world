@@ -6,7 +6,7 @@ main{
 .title {
     font-weight: 700;
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     color: white;
     margin-bottom: 2rem;
 }
@@ -25,7 +25,7 @@ form{
 .inputDiv label {
     color: var(--defaultGreen);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     padding-left: 0.8rem;
 }
@@ -37,15 +37,15 @@ form{
 #emailIcon{
     position: absolute;
     left: 1rem;
-    top: 1.2rem;
-    height: 1.5rem;
+    top: 1.5rem;
+    height: 2.5rem;
 }
 
 #lokerIcon{
     position: absolute;
     left: 1.2rem;
     top: 0.9rem;
-    width: 1.5rem; 
+    width: 2.5rem; 
 }
 
 .inputDiv input {
@@ -53,9 +53,9 @@ form{
     border: solid 0.15rem var(--defaultGreen);
     border-radius: 0.8rem;
 
-    padding: 0.7rem;
-    padding-left: 3.3rem;
-    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    font-size: 3rem;
     color: white;
 
     background-color: var(--inputBackground);
@@ -71,7 +71,7 @@ form{
 #forgotPassword{
     text-decoration: none;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: var(--hiperlink);
 }
 
@@ -80,7 +80,7 @@ form{
 }
 
 #registerSpan{
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: var(--defaultGreen);
 }
 

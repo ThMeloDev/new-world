@@ -1,8 +1,7 @@
 .title {
-    font-family: 'Readex Pro', sans-serif;
     font-weight: 700;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5.5rem;
     color: white;
     margin-bottom: 5rem;
 }
@@ -33,11 +32,11 @@ main h2, main p{
 
 main h2, footer h2{
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 3.2rem;
 }
 
 main p, footer h2{
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 footer{
@@ -46,7 +45,7 @@ footer{
 footer p{
     margin: 1rem 0;
     max-width: 50vw;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 #socialMidias{
@@ -54,6 +53,7 @@ footer p{
     flex-direction: column;
     position: relative;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 #socialMidias div{
@@ -64,10 +64,10 @@ footer p{
 }
 
 footer div img{
-    width: 1.7rem;
+    width: 2rem;
 }
 
 footer div span{
     text-align: start;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
