@@ -107,3 +107,13 @@ form{
     justify-content: center;
     margin: 3rem 0;
 }
+
+#modal{
+    z-index: 3;
+    position: absolute;
+    top: 50rem;
+    left: 11rem;
+    width: 40rem;
+    height: 30rem;
+    background-color: red;
+}

@@ -1,0 +1,53 @@
+header{
+    margin-bottom: 10rem;
+}
+
+.title {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerInput {
+    position: relative;
+}
+
+#emailIcon{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    height: 2.5rem;
+}
+
+.containerInput input {
+    outline: none;
+    border: solid 0.15rem var(--defaultGreen);
+    border-radius: 0.8rem;
+
+    padding: 1rem;
+    padding-left: 5rem;
+    font-size: 3rem;
+    color: white;
+
+    background-color: var(--inputBackground);
+    border-color: var(--defaultGreen);
+}
+
+#voltar{
+    text-decoration: none;
+    color: var(--defaultGreen);
+    font-size: 2.5rem;
+}
+
+#voltar:hover{
+    color: var(--hoverGreen);
+}
