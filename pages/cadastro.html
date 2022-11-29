@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <script defer src="../scripts/menu.js"></script>
+    <script defer src="../scripts/checkboxCadastro.js"></script>
 </head>
 
 <body>
@@ -40,122 +43,127 @@
     </header>
 
     <main>
-        <h1>Cadastrar</h1>
-        <form action="">
-            <div>
-                <label for="">E-mail</label>
-                <input type="text">
+        <h1 class="title">Cadastrar</h1>
+        <form>
+            <div class="inputDiv">
+                <label class="labelCadastro" for="e-mail">E-mail*</label>
+                <input class="inputCadastro" id='e-mail' type="text">
             </div>
-            <div>
-                <label for="">Senha</label>
-                <input type="text">
+            <div class="inputDiv">
+                <label class="labelCadastro" for="">Senha*</label>
+                <input class="inputCadastro" type="text">
             </div>
-            <div>
-                <label for="">Repetir Senha</label>
-                <input type="text">
+            <div class="inputDiv">
+                <label class="labelCadastro" for="">Repetir Senha*</label>
+                <input class="inputCadastro" type="text">
             </div>
-            
-            <div>
-                <input type="checkbox" name="userType" value='associacao' id="userType">
-                <label for="userType">Associação</label>
-            </div>
-            <div>
-                <input type="checkbox" name="userType" id="pessoaFisica">
-                <label for="pessoaFisica">Pessoa Física</label>
+
+            <div class="checkBoxsDiv">
+                <div class="inputDiv_checkbox">
+                    <input class="inputCadastro_checkbox" type="radio" name="userType" value='associacao' id="associacao" onchange="checkAssociacao()">
+                    <label class="labelCadastro_checkbox" for="associacao">Associação</label>
+                </div>
+                <div class="inputDiv_checkbox">
+                    <input class="inputCadastro_checkbox" type="radio" name="userType" id="pessoaFisica" onchange="checkPessoaFisica()">
+                    <label class="labelCadastro_checkbox" for="pessoaFisica">Pessoa Física</label>
+                </div>
             </div>
 
             <div id="afterCheckbox_associacao">
-                <div>
-                    <label for="">CNPJ*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">CNPJ*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">NOME*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">NOME*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">CEP*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">CEP*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">LOGRADOURO*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">LOGRADOURO*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">NÚMERO*</label>
-                    <input type="number">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">NÚMERO*</label>
+                    <input class="inputCadastro" type="number">
                 </div>
-                <div>
-                    <label for="">BAIRRO*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">BAIRRO*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">UF*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">UF*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">TELEFONE 1*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">TELEFONE 1*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">TELEFONE 2</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">TELEFONE 2</label>
+                    <input class="inputCadastro" type="text">
                 </div>
 
-                <button>Cadastrar</button>
+                <div class="divButtonCadastrar">
+                    <button class="button">Cadastrar</button>
+                </div>
             </div>
 
             <div id="afterCheckbox_pessoaFisica">
-                <div>
-                    <label for="">CPF*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">CPF*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">NOME*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">NOME*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">DATA DE NASCIMENTO*</label>
-                    <input type="date">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">DATA DE NASCIMENTO*</label>
+                    <input class="inputCadastro" type="date">
                 </div>
-                <div>
-                    <label for="">GÊNERO*</label>
-                    <select name="" id="">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">GÊNERO*</label>
+                    <select class="inputCadastro" id="">
                         <option value="M">Masculino</option>
                         <option value="F">Feminino</option>
                         <option value="O">Outro</option>
                     </select>
                 </div>
-                <div>
-                    <label for="">CEP*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">CEP*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">LOGRADOURO*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">LOGRADOURO*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">NÚMERO*</label>
-                    <input type="number">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">NÚMERO*</label>
+                    <input class="inputCadastro" type="number">
                 </div>
-                <div>
-                    <label for="">BAIRRO*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">BAIRRO*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">UF*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">UF*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">TELEFONE 1*</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">TELEFONE 1*</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-                <div>
-                    <label for="">TELEFONE 2</label>
-                    <input type="text">
+                <div class="inputDiv">
+                    <label class="labelCadastro" for="">TELEFONE 2</label>
+                    <input class="inputCadastro" type="text">
                 </div>
-
-                <button>Cadastrar</button>
+                <div class="divButtonCadastrar">
+                    <button class="button">Cadastrar</button>
+                </div>
             </div>
         </form>
     </main>
