@@ -116,4 +116,5 @@ form{
     width: 40rem;
     height: 30rem;
     background-color: red;
+    display: none;
 }
