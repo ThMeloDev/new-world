@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./styles/index.css">
     <!-- Scripts -->
     <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/carrosel.js"></script>
 </head>
 
 <body>
-    
+    <div id="backgroundOverlay"></div>
     <header>
         <div>
             <img id="menuIcon" src="./assets/menu.svg" alt="Icone do Menu" onclick="openMenu()">
@@ -64,6 +65,25 @@
         <p class="text">Para facilitar o trabalho dos catadores é  importante separar o lixo reciclável do lixo orgânico. Abaixo, temos um vídeo explicativo para que você possa realizar essa separação de uma forma simples e eficaz.</p>
         
         <iframe width="750" height="390" src="https://www.youtube.com/embed/V4qgUdwze6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id="carrosel">
+            <div class="carrosel">
+                <span>Como separar o lixo</span>
+                <div>
+                    <img class="seta" src="./assets/menu-left.svg" alt="Seta para esquerda" onclick="voltaImagem1()">
+                    <img class="image" id="img1" src="./assets/comoSeparar1.jpg" alt="">
+                    <img class="seta" src="./assets/menu-right.svg" alt="Seta para direita" onclick="proximaImagem1()">
+                </div>
+            </div>
+            <div class="carrosel">
+                <span>Como não separar o lixo</span>
+                <div>
+                    <img class="seta" src="./assets/menu-left.svg" alt="Seta para esquerda" onclick="voltaImagem2()">
+                    <img class="image" id="img2" src="./assets/comoNaoSeparar1.jpg" alt="">
+                    <img class="seta" src="./assets/menu-right.svg" alt="Seta para direita" onclick="proximaImagem2()">
+                </div>
+            </div>
+        </div>
 
         <h1 class="title subTitle">Benefícios da coleta seletiva</h1>
         <div id="containerBeneficios">

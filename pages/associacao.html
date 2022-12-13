@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Associacao</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/associacao.css">
+    
+    <!-- Scripts -->
+    <script defer src="../scripts/menu.js"></script>
+
+</head>
+
+<body>
+    <div id="backgroundOverlay"></div>
+    <header>
+        <div>
+            <img id="menuIcon" src="../assets/menu.svg" alt="Icone do Menu" onclick="openMenu()">
+            <img id="logo" src="../assets/logo.svg" alt="">
+        </div>
+        <!-- Menu lateral -->
+        <nav id="menu">
+            <div id="closeDiv">
+                <img id="closeNav" src="../assets/close.svg" alt="Icone do X" onclick="closeMenu()">
+            </div>
+            <ul>
+                <a href="../index.html">
+                    <li>
+                        <img src="../assets/home.svg" alt="Logo da pagina home">
+                        <span>Home</span>
+                    </li>
+                </a>
+                
+                <a href="./associacao.html">
+                    <li>
+                        <img src="../assets/delete.svg" alt="Logo de login">
+                        <span>Coletas</span>
+                    </li>
+                </a>
+                
+                <a href="./sobreNos.html">
+                    <li>
+                        <img src="../assets/info.svg" alt="Logo de sobre nós">
+                        <span>Sobre nós</span>
+                    </li>
+                </a>
+                
+                <a href="./ajuda.html">
+                    <li>
+                        <img src="../assets/help.svg" alt="Logo para ajuda">
+                        <span>Ajuda</span>
+                    </li>
+                </a>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="containerColetasPendentes">
+            <h1>Coletas Pendentes</h1>
+            <div id="coletasPendentes">
+                <img class="seta" src="../assets/disabled-menu-left.svg" alt="Coleta Anterior">
+                <div class="coletaPendente">
+                    <div>
+                        <img src="../assets/lixeiraAmarela.svg" alt="">
+                        <span class="coletaPendenteTitle">Coleta Pendente</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Luis Marcos</span>
+                    <span class="infosColeta">Data: 18/12/22</span>
+                    <span class="infosColeta">Horário: 14:30</span>
+                </div>
+
+                <div class="coletaPendente">
+                    <div>
+                        <img src="../assets/lixeiraAmarela.svg" alt="">
+                        <span class="coletaPendenteTitle">Coleta Pendente</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Luis Marcos</span>
+                    <span class="infosColeta">Data: 18/12/22</span>
+                    <span class="infosColeta">Horário: 14:30</span>
+                </div>
+
+                <div class="coletaPendente">
+                    <div>
+                        <img src="../assets/lixeiraAmarela.svg" alt="">
+                        <span class="coletaPendenteTitle">Coleta Pendente</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Luis Marcos</span>
+                    <span class="infosColeta">Data: 18/12/22</span>
+                    <span class="infosColeta">Horário: 14:30</span>
+                </div>
+
+
+                <img class="seta" src="../assets/disabled-menu-right.svg" alt="Proxima Coleta">
+            </div>
+        </div>
+
+        <div id="containerColetasRealizadas">
+            <h1>Coletas Realizadas</h1>
+            <div id="coletasRealizadas">
+                <img class="seta" src="../assets/disabled-menu-left.svg" alt="Coleta Anterior">
+                <div class="coletaRealizada">
+                    <div>
+                        <img src="../assets/lixeiraVerde.svg" alt="">
+                        <span class="coletaRealizadaTitle">Coleta Realizada</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Marcos Luis</span>
+                    <span class="infosColeta">Data: 12/02/22</span>
+                    <span class="infosColeta">Horário: 13:30</span>
+                </div>
+
+                <div class="coletaRealizada">
+                    <div>
+                        <img src="../assets/lixeiraVerde.svg" alt="">
+                        <span class="coletaRealizadaTitle" >Coleta Realizada</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Marcos Luis</span>
+                    <span class="infosColeta">Data: 12/02/22</span>
+                    <span class="infosColeta">Horário: 13:30</span>
+                </div>
+
+                <div class="coletaRealizada">
+                    <div>
+                        <img src="../assets/lixeiraVerde.svg" alt="">
+                        <span class="coletaRealizadaTitle" >Coleta Realizada</span>
+                    </div>
+                    <span class="infosColeta">Usuário: Marcos Luis</span>
+                    <span class="infosColeta">Data: 12/02/22</span>
+                    <span class="infosColeta">Horário: 13:30</span>
+                </div>
+
+
+                <img class="seta" src="../assets/disabled-menu-right.svg" alt="Proxima Coleta">
+            </div>
+        </div>
+
+        <div id="containerCatadores">
+            <h1>Catadores</h1>
+            <div id="catadores">
+                <img class="seta" src="../assets/disabled-menu-left.svg" alt="Coleta Anterior">
+                <div class="catador">
+                    <div>
+                        <div id="catadorImage1"></div>
+                        <span class="catadorTitle">Jonas Batista</span>
+                    </div>
+                    <span class="infosCatador">Idade: 20 Anos</span>
+                    <span class="infosCatador">Telefone: 2799261-3191</span>
+                </div>
+
+                <div class="catador">
+                    <div>
+                        <div id="catadorImage2"></div>
+                        <span class="catadorTitle">Henrique Moraes</span>
+                    </div>
+                    <span class="infosCatador">Idade: 30 Anos</span>
+                    <span class="infosCatador">Telefone: 2799261-3192</span>
+                </div>
+
+                <div class="catador">
+                    <div>
+                        <div id="catadorImage3"></div>
+                        <span class="catadorTitle">Renan Silva</span>
+                    </div>
+                    <span class="infosCatador">Idade: 26 Anos</span>
+                    <span class="infosCatador">Telefone: 2799261-3193</span>
+                </div>
+
+
+                <img class="seta" src="../assets/disabled-menu-right.svg" alt="Proxima Coleta">
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>

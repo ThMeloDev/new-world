@@ -1,0 +1,29 @@
+main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 3rem;
+}
+
+main p{
+    font-size: 2rem;
+}
+
+.textoAgradecimento{
+    display: grid;
+    grid-template-columns: min-content 20rem;
+    align-items: center;
+}
+
+main img{
+    width: 30rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 5rem;
+}

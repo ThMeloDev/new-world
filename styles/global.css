@@ -38,10 +38,10 @@ main{
 /*buttons*/
 
 .button{
-    width: 25rem;
+    width: 20rem;
     padding: 1rem;
     margin: 2rem auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     border: none;
     border-radius: 0.5rem;
@@ -52,6 +52,11 @@ main{
 
 .button:hover{
     background-color: var(--hoverGreen);
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Menu Css */
@@ -69,7 +74,7 @@ header div {
 
 #menuIcon {
     cursor:pointer;
-    height: 3.5rem;
+    height: 2rem;
 }
 
 #logo {
@@ -80,7 +85,7 @@ header div {
 }
 
 #logo{
-    width: 30rem;
+    width: 20rem;
 }
 
 #backgroundOverlay {
@@ -114,10 +119,10 @@ nav a{
 }
 
 #closeNav {
-    height: 83.2px;
+    height: 4.5rem;
     padding: 24px 40px;
     margin-left: auto;
-    margin-bottom: 32px;
+    margin-bottom: 1rem;
     cursor:pointer;
 }
 
@@ -138,11 +143,11 @@ nav li:hover {
 }
 
 nav ul img {
-    height: 36.8px;
+    height: 1.5rem;
 }
 
 nav span {
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-size: 2rem;
     color: white;
 }

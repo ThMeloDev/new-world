@@ -8,7 +8,6 @@ function openMenu(){
 function closeMenu(){
     let overlay = document.getElementById("backgroundOverlay")
     overlay.style.display = "none"
-    let closeIcon = document.getElementById('closeNav')
     menu.style.left = '-100vw'
 }
 

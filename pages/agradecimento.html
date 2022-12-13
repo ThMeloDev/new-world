@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Gratidão</title>
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/agradecimento.css">
     <script defer src="../scripts/menu.js"></script>
 </head>
 <body>
@@ -53,28 +53,17 @@
     </header>
 
     <main>
-        <h1 class="title">Faça Login</h1>
-        <form>
-            <div class="inputDiv">
-                <label for="email">Login</label>
-                <div class="containerInput">
-                    <img id="emailIcon" src="../assets/e-mail.svg" alt="">
-                    <input type="email" id="email" placeholder="E-mail" required>
-                </div>
-            </div>
-            <div class="inputDiv">
-                <label for="senha">Senha</label>
-                <div class="containerInput">
-                    <img id="lokerIcon" src="../assets/loker.svg" alt="">
-                    <input type="password" id="senha" placeholder="Senha" required>
-                </div>
-            </div>
-            <a id="forgotPassword" href="./recuperarSenha.html">Esqueci a senha</a>
-            <button class="button"><a href="./associacao.html">Entrar</a></button>
-        </form>
-        
-        <span id="registerSpan">Não possui cadastro? <a href="./cadastro.html">Cadastre-se</a></span>
+        <h1>Coleta confirmada, Muito Obrigado!</h1>
+        <div class="textoAgradecimento">
+            <img src="../assets/coleta_seletiva.png" alt="Icone da coleta seletiva">
+            <p>Queremos expressar nossa gratidão a você por nos ajudar a construir um mundo melhor para se viver.</p>
+        </div>
 
+        <div class="buttons">
+            <button class="button"><a href="../index.html">Home</a></button>
+            <button class="button"><a href="./pessoaFisica.html">Fazer outro pedido de coleta</a></button>
+            
+        </div>
         
     </main>
 

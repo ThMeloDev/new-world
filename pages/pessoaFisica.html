@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Coleta</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/pessoaFisica.css">
+    <script defer src="../scripts/menu.js"></script>
+</head>
+<body>
+    <div id="backgroundOverlay"></div>
+    <header>
+        <div>
+            <img id="menuIcon" src="../assets/menu.svg" alt="Icone do Menu" onclick="openMenu()">
+            <img id="logo" src="../assets/logo.svg" alt="">
+        </div>
+        <!-- Menu lateral -->
+        <nav id="menu">
+            <div id="closeDiv">
+                <img id="closeNav" src="../assets/close.svg" alt="Icone do X" onclick="closeMenu()">
+            </div>
+            <ul>
+                <a href="../index.html">
+                    <li>
+                        <img src="../assets/home.svg" alt="Logo da pagina home">
+                        <span>Home</span>
+                    </li>
+                </a>
+                
+                <a href="./login.html">
+                    <li>
+                        <img src="../assets/login.svg" alt="Logo de login">
+                        <span>Faça Login</span>
+                    </li>
+                </a>
+                
+                <a href="./sobreNos.html">
+                    <li>
+                        <img src="../assets/info.svg" alt="Logo de sobre nós">
+                        <span>Sobre nós</span>
+                    </li>
+                </a>
+                
+                <a href="./ajuda.html">
+                    <li>
+                        <img src="../assets/help.svg" alt="Logo para ajuda">
+                        <span>Ajuda</span>
+                    </li>
+                </a>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">Nova Coleta</h1>
+
+        <form>
+            <div class="left">
+                <div>
+                    <label for="selectAssociacao">Selecione a associação</label>
+                    <select name="associacao" id="selectAssociacao">
+                        <option value="0">Selecione a Associação</option>
+                        <option value="ascavive">ASCAVIVE - Associação de Catadores de Vila Velha</option>
+                        <option value="amariv">AMARIV - Associação dos Catadores de Materiais Recicláveis da Ilha de Vitória</option>
+                        <option value="revive">REVIVE - Associação de Catadores</option>
+                        <option value="ascaveni">ASCAVENI - Associação de Catadores de Venda Nova do Imigrante</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="horarioColeta">Preencha com o dia e horário da coleta</label>
+                    <input type="date" name="diaColeta" id="diaColeta">
+                    <input type="time" name="horarioColeta" id="horarioColeta">
+                </div>
+                <div>
+                    <label for="files">Adicione fotos para nos ajudar</label>
+                    <input id="files" type="file" multiple>
+                </div>
+            </div>
+            <div class="right">
+                <span>Selecione os materiais da coleta</span>
+                <div>
+                    <input type="checkbox" id="plastico" value="plastico">
+                    <label for="plastico">Plástico</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="papel" value="papel">
+                    <label for="papel">Papel</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="metal" value="metal">
+                    <label for="metal">Metal</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="organico" value="organico">
+                    <label for="organico">Orgânico</label>
+                </div>
+                <div id="sacolas">
+                    <label for="sacolas">Quantidade de sacos/sacolas</label>
+                    <input type="number" id="sacolas">
+                </div>
+            </div>
+        </form>
+        <button class="button"><a href="./agradecimento.html">Solicitar Coleta</a></button>
+
+        
+       
+    </main>
+
+</body>
+</html>
